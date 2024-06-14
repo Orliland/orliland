@@ -1,0 +1,6 @@
+.footer {
+  background-image: url("../../public/bg-footer.svg");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
