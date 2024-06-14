@@ -1,6 +1,12 @@
 .footer {
   background-image: url("../../public/bg-footer.svg");
   background-position: bottom;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    background-size: contain;
+  }
 }
