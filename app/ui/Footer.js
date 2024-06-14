@@ -10,7 +10,11 @@ export default function Footer() {
       </p>
       <p className="text-xs mt-[120px] text-black/20">
         Designed by a{" "}
-        <a className="font-bold" href="https://vjy.me" target="__blank">
+        <a
+          className={`${styles.retro2} `}
+          href="https://vjy.me"
+          target="__blank"
+        >
           wizard
         </a>
         . Code by me.
