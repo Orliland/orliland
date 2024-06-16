@@ -2,11 +2,13 @@ import Image from "next/image";
 import { ButtonBorder } from "./Buttons";
 import ThreadsIcon from "@/public/threads.svg";
 import LinkedinIcon from "@/public/linkedin.svg";
+import styles from "@/app/ui/footer.module.css";
 
 export default function Header() {
   return (
-    <header className="container mx-auto max-w-[700px] pt-8">
-      <nav className="p-4 rounded-xl bg-white/20 flex justify-between items-center">
+    <header className=" container mx-auto max-w-[700px] pt-8 px-4">
+      <div className={styles.header}></div>
+      <nav className="px-5 py-3 rounded-xl bg-white/20 flex justify-between items-center">
         <span className="text-xl font-bold hover:cursor-pointer hover:text-slate-500 ">
           Orliland
         </span>

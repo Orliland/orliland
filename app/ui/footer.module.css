@@ -1,12 +1,24 @@
-.footer {
-  background-image: url("../../public/bg-footer.svg");
-  background-position: bottom;
+.header {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 670px;
+  background-image: url("../../public/bg-header.svg");
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@media (min-width: 768px) {
-  .footer {
-    background-size: contain;
-  }
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 670px;
+  background-image: url("../../public/bg-footer.svg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
