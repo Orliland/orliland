@@ -10,16 +10,3 @@
     background-size: contain;
   }
 }
-
-.retro2 {
-  background: #4ab1f1;
-  background: linear-gradient(
-    to right,
-    #4ab1f1 0%,
-    #566cec 33%,
-    #d749af 66%,
-    #ff7c51 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
