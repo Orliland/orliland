@@ -15,34 +15,23 @@
   -webkit-text-fill-color: transparent;
 }
 
-.sunset2-border {
-  z-index: 2;
-  position: relative;
-}
-
-.sunset2-border::after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
+.button--border {
+  border: 2px solid transparent;
   border-radius: 24px;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  background: #f06844;
-  background: linear-gradient(
-    to right,
-    #f06844 0%,
-    #ee4c54 25%,
-    #d45e95 50%,
-    #9c6ca6 75%,
-    #6583c1 100%
-  );
+  background-image: linear-gradient(#fedde1, #fedde1),
+    linear-gradient(
+      to right,
+      #f06844 0%,
+      #ee4c54 25%,
+      #d45e95 50%,
+      #9c6ca6 75%,
+      #6583c1 100%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
-/* TODO: add animation/delay to button */
-
-.sunset2 {
+.button--border span {
   background: #f06844;
   background: linear-gradient(
     to right,
@@ -56,14 +45,30 @@
   -webkit-text-fill-color: transparent;
 }
 
-.sunset2:hover {
-  color: #ffffff;
-  background-color: transparent;
+.button--border:hover {
+  background-image: linear-gradient(
+      to right,
+      #f06844 0%,
+      #ee4c54 25%,
+      #d45e95 50%,
+      #9c6ca6 75%,
+      #6583c1 100%
+    ),
+    linear-gradient(
+      to right,
+      #f06844 0%,
+      #ee4c54 25%,
+      #d45e95 50%,
+      #9c6ca6 75%,
+      #6583c1 100%
+    );
+}
 
-  -webkit-background-clip: initial;
+.button--border:hover span {
+  color: #fff;
   -webkit-text-fill-color: initial;
 }
 
-.sunset2:hover img {
+.button--border:hover img {
   filter: brightness(100);
 }
