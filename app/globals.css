@@ -15,33 +15,9 @@
   -webkit-text-fill-color: transparent;
 }
 
-.sunset2 {
-  background: #f06844;
-  background: linear-gradient(
-    to right,
-    #f06844 0%,
-    #ee4c54 25%,
-    #d45e95 50%,
-    #9c6ca6 75%,
-    #6583c1 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .sunset2-border {
   z-index: 2;
   position: relative;
-  /* padding: 1px;
-  background: #f06844;
-  background: linear-gradient(
-    to right,
-    #f06844 0%,
-    #ee4c54 25%,
-    #d45e95 50%,
-    #9c6ca6 75%,
-    #6583c1 100%
-  ); */
 }
 
 .sunset2-border::after {
@@ -64,7 +40,28 @@
   );
 }
 
-.icon {
-  width: 2.4rem;
-  height: 2.4rem;
+.sunset2 {
+  background: #f06844;
+  background: linear-gradient(
+    to right,
+    #f06844 0%,
+    #ee4c54 25%,
+    #d45e95 50%,
+    #9c6ca6 75%,
+    #6583c1 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sunset2:hover {
+  color: #ffffff;
+  background-color: transparent;
+
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+}
+
+.sunset2:hover img {
+  filter: brightness(100);
 }

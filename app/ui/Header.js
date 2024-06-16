@@ -15,7 +15,7 @@ export default function Header() {
             <ButtonBorder />
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/orliland">
+            <a href="https://www.linkedin.com/in/orliland" target="__blank">
               <Image
                 src={LinkedinIcon}
                 alt="Orliland LinkedIn link"
@@ -24,7 +24,7 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a href="https://threads.net/Orliland">
+            <a href="https://threads.net/Orliland" target="__blank">
               <Image
                 src={ThreadsIcon}
                 alt="Orliland LinkedIn link"
